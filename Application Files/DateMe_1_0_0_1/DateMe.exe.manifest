@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="DateMe.exe" version="1.0.0.1" publicKeyToken="9c027c19b6e9e473" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DateMe" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="DateMe.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DateMe.exe" size="337832">
+      <assemblyIdentity name="DateMe" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>k4Z9KZHBx5yOSAScNWufEy5W3duShAsmrTasveYvasY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ImageProcessor.dll" size="181760">
+      <assemblyIdentity name="ImageProcessor" version="2.6.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>y+xKzl3HMB8IB5HdnD4W28YRz7kZScwwWpY0oUkPStc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="DateMe.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icon.ico" size="105518">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T90iwB/sWGD/7hfJ03tWf5ooq6ZtQa1op9/LTOrdLcQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on and is
+           is designed to work with. Uncomment the appropriate elements and Windows will 
+           automatically selected the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=JAKUB\jakub" issuerKeyHash="d680933178cc6bce6819da84ea76cdc6f18f79bd" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>QGdRH+Td42iy67rRlmaF4l+5LpgxoKaan3WnW7aVNxU=</DigestValue></Reference></SignedInfo><SignatureValue>ZRZk26Ds8/hffRAomcxhfl/opWuN9TEfOOTnUKOUXD8j7RFDeSk2PC90qbeEhcBjq70a/Q2fFpRA48X6jJAXkD2supP2584QYlEoxm3l8Eb2/sfCPt/QtwW7774XnKCwdmbS2Afcs+wX8HNgYBvBrW0MjBzr9sZgrTKBTyAR33U=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vjx61GSvvCZU2GDkuVFML7gzBueatuNUOyNPa5h5DYRpzXoAbyIEG80a6N2JJf80AHE7qh6yIOxBOkJpBiWGPl2ibtMeOZ9XRx5yFdTk5KRqU95yccVFd/gFmtgy0ktMFE/mRVHJ3N0nWAzhXejLTsUVtAF59u17iAUqpYpiL00=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="153795b65ba7759f9aa6a031982eb95fe2856696d1baebb268e3dde41f516740" Description="" Url=""><as:assemblyIdentity name="DateMe.exe" version="1.0.0.1" publicKeyToken="9c027c19b6e9e473" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=JAKUB\jakub</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>NjIGC8CsG9vZiPzo+nmJ6YzSp0a1YT/b8Niicv1U7w8=</DigestValue></Reference></SignedInfo><SignatureValue>kTZjbpJRswfZ5UkU6rGOJAUSuvAp7BzzsM9H1jDiKiB0vbuZsKODTr4WKGt/AFBKOH/2QqRsDksg5dTvgru5y7sCRps/znSY+mpqyAz4k4OiHJ9I7vDJfb3LJEtGtHa7wgzzJXhtCK6TO5xvipplYjtJ28b9uHJ+Xej14Z9yj3I=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vjx61GSvvCZU2GDkuVFML7gzBueatuNUOyNPa5h5DYRpzXoAbyIEG80a6N2JJf80AHE7qh6yIOxBOkJpBiWGPl2ibtMeOZ9XRx5yFdTk5KRqU95yccVFd/gFmtgy0ktMFE/mRVHJ3N0nWAzhXejLTsUVtAF59u17iAUqpYpiL00=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQGJdYv+9robdG3tRXdrS1CzANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYASgBBAEsAVQBCAFwAagBhAGsAdQBiMB4XDTE4MDIxMDEwMzAyNFoXDTE5MDIxMDE2MzAyNFowITEfMB0GA1UEAx4WAEoAQQBLAFUAQgBcAGoAYQBrAHUAYjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAvjx61GSvvCZU2GDkuVFML7gzBueatuNUOyNPa5h5DYRpzXoAbyIEG80a6N2JJf80AHE7qh6yIOxBOkJpBiWGPl2ibtMeOZ9XRx5yFdTk5KRqU95yccVFd/gFmtgy0ktMFE/mRVHJ3N0nWAzhXejLTsUVtAF59u17iAUqpYpiL00CAwEAATANBgkqhkiG9w0BAQsFAAOBgQA88psnJVd/uSRcZTEJUeMzDJMay/kYCjeacWQzN2eaJ4epCJFbN7eR1DI7LlEp+MVCTkwSO0gBt0aeEOCqMeCjh4zgYy6ywW07kNrLyfZtxzkFCDCI6AS8XWB79TKgOO0PYFayvqFW9jCOleazDh0qZat4o6Qs8WwHw+aOr7m6Cw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
