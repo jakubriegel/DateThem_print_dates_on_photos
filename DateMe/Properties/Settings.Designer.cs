@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DateMe.Properties
+namespace DateThem.Properties
 {
 
 
